@@ -12,6 +12,7 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
 
         caption {
@@ -21,8 +22,23 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #414141;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #414141;
+
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
         }
 
         td, th {
@@ -95,15 +111,116 @@
                 <td>Ceará</td>
                 <td class="num">9 233 656	</td>
             </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 441</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 350 483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 145 040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 836 399</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 375 646</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 220 104</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 982 818</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 901 895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 291 077</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 746 227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 577 342</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">880 631</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802 837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716 793</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
                 <th scope="row">Total de habitantes</th>
-                <td><strong>141 193 342</strong></td>
+                <td><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio neque dicta nam a sapiente in excepturi eius, blanditiis incidunt illo ex exercitationem eos sit at omnis minima vel obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut, vitae quis deserunt neque, rerum laboriosam alias esse aperiam nihil nostrum ad, tempora quaerat fugit fugiat officia aliquid vel reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus ut nemo? Sunt dignissimos nemo, aspernatur officia corporis excepturi aliquam quod quas iure corrupti, numquam non quos vel ex recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae omnis recusandae fugit, cumque, rem sapiente modi soluta possimus quos cupiditate quis eius doloremque. Deserunt ratione sed nulla est sunt corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nisi, sed esse excepturi aliquid labore enim unde id eos voluptatibus illo accusamus deleniti, asperiores quae? Hic iusto veritatis esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, deleniti, ea optio provident, illum necessitatibus atque dignissimos sequi repudiandae quasi quibusdam harum porro labore voluptate saepe nihil ipsam molestiae minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ut nihil, possimus blanditiis optio voluptatibus non dolore fuga dolorum facilis, reprehenderit itaque porro cupiditate. Reiciendis neque debitis saepe iure perspiciatis. lore lore lore lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias maxime aut temporibus exercitationem laudantium, porro sequi accusantium? Rerum ab consequuntur amet, molestias at voluptas! Voluptatibus modi quod tenetur maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis illum aut ratione officia labore quisquam quam cumque consequatur id ab repudiandae quae unde saepe aliquid, autem fugit temporibus soluta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptas laudantium harum tenetur voluptatibus temporibus nisi quidem laborum, assumenda saepe, facere aperiam architecto amet dolor minima iure error nostrum quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, veritatis amet? Inventore praesentium modi cumque, amet numquam perspiciatis dolore possimus. Ad iure cumque doloremque natus deleniti! Enim voluptas facere quas?
+    </p>
 
 </body>
 </html>
