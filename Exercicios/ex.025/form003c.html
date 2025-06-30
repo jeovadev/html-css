@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <h1>Formulários</h1>
+   <p>Novos elementos para input</p> 
+   <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" required minlength="5" maxlength="15" size="5" placeholder="nome..." autocomplete="name">
+    </p>
+
+    <p>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome" required minlength="5" maxlength="15" size="8" placeholder="sobrenome..." autocomplete="name">
+    </p>
+
+    <p>
+        <label for="imedia">Média:</label>
+        <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" placeholder="media...">
+    </p>
+
+    <p>
+        <label for="imes">Periódo Letivo:</label>
+        <input type="month" name="mes" id="imes" required value="2025-06">
+    </p>
+
+    <p>
+        <label for="idia">Dia da Prova:</label>
+        <input type="date" required value="2025-06-30">
+    </p>
+
+    <p>
+        <label for="ihora">Horário da Prova:</label>
+        <input type="time" name="hora" id="ihora" required value="00:00">
+    </p>
+
+    <p>
+        <input type="submit" value="Submeter">
+        <input type="reset" value="Resetar">
+    </p>
+   </form>
+</body>
+</html>
