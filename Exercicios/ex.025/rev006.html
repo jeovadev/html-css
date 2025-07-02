@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários Revisão 06</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>13 Principais Elementos para Formulários</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Seus dados pessoais</legend>
+
+            <p>
+                <label for="ifoto">Nos envie uma foto sua, com uma boa iluminação</label> <br>
+                <input type="file" name="foto" id="ifoto" required>
+            </p>
+
+            <p>
+                <label for="inome">Nome completo:</label>
+                <input type="text" name="nome" id="inome" required minlength="10" maxlength="35" placeholder="nome completo..." size="15" autocomplete="nickname">
+            </p>
+
+            <p>
+                <label for="iidade">Quantos anos você tem?</label>
+                <input type="number" name="idade" id="iidade" required min="1" max="100" placeholder="idade...">  
+            </p>
+
+            <p>
+                <label for="imes">Mês e ano de nascimento:</label>
+                <input type="month" name="mes" id="imes" required value="2000-07">
+            </p>
+
+            <p>
+                <label for="idata">Data de nascimento:</label>
+                <input type="date" name="data" id="idata" required value="2000-10-15">
+            </p>
+
+            <p>
+                <label for="ihora">Hora de nascimento:</label>
+                <input type="time" name="hora" id="ihora" required value="12:00">
+            </p>
+
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="seuemail@gmail.com" size="15" autocomplete="email">
+            </p>
+
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required max="14" placeholder=" xx xxxx-xxxx" size="15" autocomplete="tel">
+            </p>
+
+            <p>
+                <p>Sexo no qual você se identifica:</p>
+                <input type="radio" name="sexo" id="imasculino">
+                <label for="imasculino">Masculino</label>
+
+                <input type="radio" name="sexo" id="ifeminino">
+                <label for="ifeminino">Feminino</label>
+
+                <input type="radio" name="sexo" id="ioutro">
+                <label for="ioutro">Outro</label>
+            </p>
+
+            <p>
+                <label for="icor">Qual é sua cor preferida?</label>
+                <input type="color" name="cor" id="icor" value="#ffffff">
+            </p>
+
+            <p>    
+                <label for="isatisfacao">Qual seu grau de satisfação com esse formulário? (01 a 10)</label> <br>
+                <input type="range" name="satisfacao" id="isatisfacao" value="5" min="1" max="10">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <p>
+                <label for="iusuario">Usuário:</label>
+                <input type="text" name="usuario" id="iusuario" required maxlength="11" placeholder="ex: @juniorlima">
+            </p>
+
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="crie uma senha">
+            </p>
+
+            <p>
+                <input type="checkbox" name="termos1" id="itermos1">
+                <label for="itermos1">Eu aceito receber emails promocionais.</label> <br>
+
+                <input type="checkbox" name="termos2" id="itermos2">
+                <label for="itermos2">Eu aceito receber ofertas de terceiros.</label> <br>
+
+                <input type="checkbox" name="todosostermos" id="itodosostermos" required>
+                <label for="itodosostermos">Eu aceito todos os termos.</label>
+                
+            </p>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
