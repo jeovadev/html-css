@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iregiao">Você mora em que região do Brasil?</label>
+            <select name="regiao" id="iregiao" required>
+                <option value="Norte">Norte</option>
+                <option value="Nordeste">Nordeste</option>
+                <option value="Centro-Oeste">Centro-Oeste</option>
+                <option value="Sudeste">Sudeste</option>
+                <option value="Sul">Sul</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="iestado">Você mora em que estado do Brasil?</label>
+            <input type="text" name="estado" id="iestado" list="lestado">
+            <datalist id="lestado">
+                <option value="Maranhão">Maranhão</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará">Ceará</option>
+                <option value="Piaúi">Piaúi</option>
+                <option value="Paraíba">Paraíba</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iavaliacao">Oque você achou desse formulário?</label> <br>
+            <textarea name="avaliacao" id="iavaliacao" required cols="35" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
