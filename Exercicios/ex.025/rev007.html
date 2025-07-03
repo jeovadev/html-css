@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados Demográficos - select</legend>
+            <p>
+                <label for="iestado">Em que estado você nasceu?</label>
+                <select name="estado" id="iestado" required>
+                    <option value="CE">Ceará</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahia</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="RN">Rio G.do Norte</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="icidade">Em que cidade você nasceu?</label>
+                <select name="cidade" id="icidade" required>
+                    <option value="acarau">Acaraú</option>
+                    <option value="cruz">Cruz</option>
+                    <option value="aranau">Aranaú</option>
+                    <option value="prea">Preá</option>
+                    <option value="morgado">Morgado</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="ipessoas">Quantas pessoas moram com você?</label>
+                <select name="pessoas" id="ipessoas" required>
+                    <option value="00">0 pessoas</option>
+                    <option value="01">1 pessoa</option>
+                    <option value="02">2 pessoas</option>
+                    <option value="03">3 pessoas</option>
+                    <option value="+04">4 ou mais pessoas</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Trabalhistas - datalist</legend>
+            <p>
+                <label for="iprofatual">Qual é sua profissão atual?</label>
+                <input type="text" name="profissaoatual" id="iprofatual" list="latualprofissoes"  required maxlength="30">
+                <datalist id="latualprofissoes">
+                    <option value="Adiministrador">Adiministrador</option>
+                    <option value="Ferreiro">Ferreiro</option>
+                    <option value="Garçom">Garçom</option>
+                    <option value="Cozinheiro">Cozinheiro</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="iprofanterior">Qual foi sua profissão anterior?</label>
+                <input type="text" name="profissaoanterior" id="iprofanterior" list="lanteriorprofissoes" required maxlength="30">
+                <datalist id="lanteriorprofissoes">
+                    <option value="Adiministrador">Adiministrador</option>
+                    <option value="Ferreiro">Ferreiro</option>
+                    <option value="Garçom">Garçom</option>
+                    <option value="Cozinheiro">Cozinheiro</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="iprofsonhos">Qual é sua profissão dos sonhos?</label>
+                <input type="text" name="profissaosonhos" id="iprofsonhos" list="lsonhosprofissoes" required maxlength="30">
+                <datalist id="lsonhosprofissoes">
+                    <option value="Adiministrador">Adiministrador</option>
+                    <option value="Ferreiro">Ferreiro</option>
+                    <option value="Garçom">Garçom</option>
+                    <option value="Cozinheiro">Cozinheiro</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                </datalist>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Complementares - textarea</legend>
+            <p>
+                <label for="ifrase1">Digite uma frase legal:</label><br>
+                <textarea name="frase1" id="ifrase1" cols="50" rows="10" required maxlength="300"></textarea> 
+            
+            </p>
+
+            <p>
+                <label for="ifrase2">Digite uma segunda frase legal:</label><br>
+                <textarea name="frase2" id="ifrase2" cols="50" rows="10" required maxlength="300"></textarea> 
+            </p>
+
+            <p>
+                <label for="ifrase3">Digite uma terceira frase legal:</label><br>
+                <textarea name="frase3" id="ifrase3" cols="50" rows="10" required maxlength="300"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
