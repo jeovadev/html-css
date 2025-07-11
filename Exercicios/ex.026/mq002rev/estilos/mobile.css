@@ -15,7 +15,7 @@
 
 header {
     background-color: #00c7ce;
-    padding: 35px;
+    padding: 3em;
 }
 
 header h1 {
@@ -24,11 +24,10 @@ header h1 {
     font-variant: small-caps;
     font-size: 3em;
     color: white;
-    text-shadow: 2px 2px 2px #00767ada ;
+    text-shadow: 2px 2px 2px #00767ada;
 }
 
 /*----- FIM DO CABEÇALHO -----*/
-
 
 .container {
     width: 400px;
@@ -58,7 +57,7 @@ header h1 {
 
 div #cat, #dog, #bird, #lontra, #rabit, #hamster {
     width: 200px;
-    height: 350px;
+    height: 400px;
 }
 
 img {
@@ -84,6 +83,6 @@ footer a {
 footer a:hover {
     background-color: white;
     padding: 5px;
-    border-radius: 10px;
-    color: #00767ada;
+    border-radius: 5px;
+    color: #01888d;
 }
