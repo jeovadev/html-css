@@ -5,29 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Hamburguer</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Menu Hamburguer</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                     <li><a href="#">Home</a></li>
                 
                     <li><a href="#">Contato</a></li>
                 
                     <li><a href="#">Notícias</a></li>
+
+                    <li><a href="#">Canais</a></li>
+
+                    <li><a href="#">Chat</a></li>
                 
             </ul>
         </menu>
     </header>
     <main>
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quod nostrum, earum minus suscipit beatae fugiat distinctio ad culpa doloribus autem nobis nisi! Veritatis suscipit dolorum obcaecati beatae tempore itaque.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quod nostrum, earum minus suscipit beatae fugiat distinctio ad culpa doloribus autem nobis nisi! Veritatis suscipit dolorum obcaecati beatae tempore itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero sint illum dignissimos eligendi doloremque reprehenderit, ipsa ullam facere! Fugiat dicta mollitia rerum dolore maiores consequuntur, totam obcaecati doloremque minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quis eaque reprehenderit, est itaque error ullam suscipit mollitia commodi a libero ipsa harum voluptatibus esse praesentium, minus unde dolore assumenda?</p> 
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores qui deserunt voluptas, omnis accusantium cumque, ipsa sunt tempore consequuntur non ea esse, doloremque blanditiis iste quidem facere sequi. Aut. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
-            
-            <p>Quos dolores accusantium sapiente doloribus deleniti, est repellendus minima fugit magnam voluptatem. Dolorum quas maiores nulla quam eligendi libero commodi voluptate aspernatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores qui deserunt voluptas, omnis accusantium cumque, ipsa sunt tempore consequuntur non ea esse, doloremque blanditiis iste quidem facere sequi. Aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi, rem voluptas ipsam, in ullam eaque aspernatur mollitia architecto assumenda itaque? Inventore officiis laboriosam neque incidunt repellat, cupiditate repellendus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus aliquam dolore inventore impedit, ipsum reprehenderit vel laudantium asperiores maxime omnis nihil adipisci a. Ipsam adipisci voluptas aut nulla modi.</p> 
         </article>
     </main>
+
+    <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+
+            else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
 </html>
