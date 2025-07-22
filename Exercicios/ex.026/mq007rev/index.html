@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu Hamburguer</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMeneu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore numquam quasi, saepe molestiae, commodi adipisci delectus hic voluptatum, sapiente et? Cupiditate, voluptate eos et maxime quos nulla alias laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut impedit dolores in dignissimos ex corrupti voluptatem, voluptas tempore earum perspiciatis delectus perferendis. Voluptate minus, consequatur officia voluptatum quisquam non pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis reprehenderit molestiae cum fuga magni eius assumenda possimus similique numquam, distinctio odit accusantium consequuntur, necessitatibus dolorum doloribus adipisci! Reiciendis, fugit temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, magnam voluptatum quasi assumenda quibusdam ducimus, doloremque debitis temporibus nisi cum at nam sunt itaque odit et, fugit eveniet! Veniam, eos?
+                orem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore numquam quasi, saepe molestiae, commodi adipisci delectus hic voluptatum, sapiente et? Cupiditate, voluptate eos et maxime quos nulla alias laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut impedit dolores in dignissimos ex corrupti voluptatem, voluptas tempore earum perspiciatis delectus perferendis. Voluptate minus, consequatur officia voluptatum quisquam non pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis reprehenderit molestiae cum fuga magni eius assumenda possimus similique numquam, distinctio odit accusantium consequuntur, necessitatibus dolorum doloribus adipisci! Reiciendis, fugit temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, magnam voluptatum quasi assumenda quibusdam ducimus, doloremque debitis temporibus nisi cum at nam sunt itaque odit et, fugit eveniet! Veniam, eos?
+            </p>
+        </article>
+    </main>
+
+    <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 600){
+                itens.style.display = 'block'
+            }
+
+            else {itens.style.display = 'none'}
+        }
+
+
+        function clickMeneu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+
+            else {itens.style.display = 'block'}
+        }
+    </script>
+
+</body>
+</html>
