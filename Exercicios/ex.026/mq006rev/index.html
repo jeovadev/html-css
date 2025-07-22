@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu hamburguer</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opção 01</a></li>
+                <li><a href="#">opção 02</a></li>
+                <li><a href="#">opção 03</a></li>
+                <li><a href="#">opção 04</a></li>
+            </ul>
+        </menu>
+    </header>
+        <main>
+            <article>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eum dicta porro fugit voluptatem quae! Placeat, non, atque illum sit repellendus blanditiis laboriosam similique beatae officiis libero expedita dicta architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quas rerum nulla velit, debitis earum fugiat nesciunt, voluptates vero illum aperiam quibusdam facilis perferendis ducimus quod non quam dicta repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, voluptates quasi. Earum dicta facilis ullam aliquam laudantium distinctio voluptatibus ipsum quo deleniti id excepturi iure porro, vero culpa sed blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem similique veritatis amet eaque vitae corporis! Omnis, ab. Quas illo, repudiandae ut ipsa, mollitia voluptatem ratione laudantium, nostrum obcaecati odit excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatibus quia quibusdam vel voluptate repudiandae nulla, animi a qui sint cumque accusamus eligendi doloribus quas? Consectetur impedit voluptatum adipisci earum?
+            </article>
+        </main>
+
+        <script>
+
+            function mudouTamanho(){
+                if (innerWidth >= 768) {
+                    itens.style.display = 'block'
+                }
+
+                else {items.style.display = 'none'}
+            }
+
+            function clickMenu(){
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                }
+
+                else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+    
+</body>
+</html>
